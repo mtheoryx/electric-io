@@ -6,3 +6,4 @@ coverage
 .cache
 .env
 public/js/dist/
+devnotes.md
