@@ -1,0 +1,11 @@
+0649154d5e59174e4dcfb5ac088c2c32
+'use strict';
+
+var _vue = require('vue');
+
+var _vue2 = _interopRequireDefault(_vue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+window.Vue = _vue2.default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3RTZXR1cC5qcyJdLCJuYW1lcyI6WyJ3aW5kb3ciLCJWdWUiXSwibWFwcGluZ3MiOiI7O0FBQUE7Ozs7OztBQUNBQSxPQUFPQyxHQUFQLEdBQWFBLGFBQWIiLCJmaWxlIjoidGVzdFNldHVwLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFZ1ZSBmcm9tICd2dWUnO1xud2luZG93LlZ1ZSA9IFZ1ZTtcbiJdfQ==

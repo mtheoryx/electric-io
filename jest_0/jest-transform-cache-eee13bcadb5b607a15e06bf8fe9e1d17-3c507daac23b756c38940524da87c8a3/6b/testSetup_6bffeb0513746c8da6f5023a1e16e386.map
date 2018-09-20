@@ -1,0 +1,1 @@
+{"version":3,"sources":["testSetup.js"],"names":["window","Vue"],"mappings":";;AAAA;;;;;;AACAA,OAAOC,GAAP,GAAaA,aAAb","file":"testSetup.js","sourcesContent":["import Vue from 'vue';\nwindow.Vue = Vue;\n"]}

@@ -11,7 +11,10 @@
     "watch:server": "nodemon index.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "precommit": "pretty-quick --staged"
+    "precommit": "pretty-quick --staged",
+    "server": "node index.js",
+    "dev:server": "SIMULATING=true node index.js",
+    "dev:server:test": "jest"
   },
   "dependencies": {
     "azure-iothub": "1.7.1",

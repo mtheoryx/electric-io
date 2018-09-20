@@ -1,0 +1,20 @@
+630b86df5b28b691afb1f521448a23ba
+'use strict';
+
+var _vue = require('vue');
+
+var _vue2 = _interopRequireDefault(_vue);
+
+var _App = require('./components/App');
+
+var _App2 = _interopRequireDefault(_App);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var vm = new _vue2.default({
+  el: '#app',
+  render: function render(h) {
+    return h(_App2.default);
+  }
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOlsidm0iLCJWdWUiLCJlbCIsInJlbmRlciIsImgiLCJBcHAiXSwibWFwcGluZ3MiOiI7O0FBQUE7Ozs7QUFDQTs7Ozs7O0FBRUEsSUFBTUEsS0FBSyxJQUFJQyxhQUFKLENBQVE7QUFDakJDLE1BQUksTUFEYTtBQUVqQkMsVUFBUTtBQUFBLFdBQUtDLEVBQUVDLGFBQUYsQ0FBTDtBQUFBO0FBRlMsQ0FBUixDQUFYIiwiZmlsZSI6Im1haW4uanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgVnVlIGZyb20gJ3Z1ZSc7XG5pbXBvcnQgQXBwIGZyb20gJy4vY29tcG9uZW50cy9BcHAnO1xuXG5jb25zdCB2bSA9IG5ldyBWdWUoe1xuICBlbDogJyNhcHAnLFxuICByZW5kZXI6IGggPT4gaChBcHApXG59KTtcbiJdfQ==

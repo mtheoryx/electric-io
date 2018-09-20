@@ -1,0 +1,55 @@
+298eadbefc12ebc7a30fcb4fbf897e17
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  sticker: {
+    title: 'Sticker Time',
+    type: 'sticker',
+    url: 'https://i.giphy.com/lEnCWZXT4eHSg.gif',
+    position: [0, 0],
+    size: [1, 1],
+    template: '\n      <div>\n        <label>Picture URL\n          <input type="text" name="url" v-bind:value="tile.url"/>\n        </label>\n      </div>\n    '
+  },
+  number: {
+    title: 'Number',
+    type: 'number',
+    deviceId: '',
+    textColor: '#000',
+    property: '',
+    position: [0, 0],
+    size: [1, 1],
+    template: '\n      <div>\n        <label>Device Id\n          <select name="deviceId" id="deviceSelect" >\n            <option v-for="device in deviceList" v-bind:selected="device===tile.deviceId">\n              {{device}}\n            </option>\n        </select>\n        </label>\n        \n        <label>Data Property\n          <input type="text" name="property" v-bind:value="tile.property"/>\n        </label>\n\n        <label>Text Color\n          <input type="text" name="textColor" v-bind:value="tile.textColor"/>\n        </label>\n      </div>\n    '
+  },
+  button: {
+    title: 'Cool Button',
+    type: 'button',
+    buttonText: 'Click Me',
+    deviceId: '',
+    deviceMethod: '',
+    position: [0, 0],
+    size: [0.8, 0.7],
+    template: '\n      <div>\n        <label>Device Id\n          <select name="deviceId" id="deviceSelect" >\n              <option v-for="device in deviceList" v-bind:selected="device===tile.deviceId">\n                {{device}}\n              </option>\n          </select>\n        </label>\n        \n        <label>Method Name\n          <input type="text" name="deviceMethod" v-bind:value="tile.deviceMethod"/>\n        </label>\n        \n        <label>Button Text\n          <input type="text" name="buttonText" v-bind:value="tile.buttonText"/>\n        </label>\n      </div>\n   '
+  },
+  lineChart: {
+    title: 'Line Chart',
+    type: 'line-chart',
+    lineColor: '#FF6384',
+    deviceId: '',
+    property: '',
+    position: [0, 0],
+    size: [2, 1.5],
+    template: '\n      <div>\n        <label>Device Id\n        <select name="deviceId" id="deviceSelect" >\n            <option v-for="device in deviceList" :selected="device===tile.deviceId">\n              {{device}}\n            </option>\n        </select>\n        </label>\n        \n        <label>Data Property\n          <input type="text" name="property" :value="tile.property"/>\n        </label>\n        \n        <label>Line Color\n          <input type="text" name="lineColor" :value="tile.lineColor"/>\n        </label>\n      </div>\n    '
+  },
+  text: {
+    title: 'Most Excellent Note',
+    type: 'text',
+    tileText: '# Hello!',
+    position: [0, 0],
+    size: [1.2, 1],
+    template: '\n      <div>\n        <label>This supports <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">markdown</a>!\n          <textarea name="tileText" :value="tile.tileText" ></textarea>\n        </label>\n      </div>\n    '
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlbXBsYXRlcy5qcyJdLCJuYW1lcyI6WyJzdGlja2VyIiwidGl0bGUiLCJ0eXBlIiwidXJsIiwicG9zaXRpb24iLCJzaXplIiwidGVtcGxhdGUiLCJudW1iZXIiLCJkZXZpY2VJZCIsInRleHRDb2xvciIsInByb3BlcnR5IiwiYnV0dG9uIiwiYnV0dG9uVGV4dCIsImRldmljZU1ldGhvZCIsImxpbmVDaGFydCIsImxpbmVDb2xvciIsInRleHQiLCJ0aWxlVGV4dCJdLCJtYXBwaW5ncyI6Ijs7Ozs7a0JBQWU7QUFDYkEsV0FBUztBQUNQQyxXQUFPLGNBREE7QUFFUEMsVUFBTSxTQUZDO0FBR1BDLFNBQUssdUNBSEU7QUFJUEMsY0FBVSxDQUFDLENBQUQsRUFBSSxDQUFKLENBSkg7QUFLUEMsVUFBTSxDQUFDLENBQUQsRUFBSSxDQUFKLENBTEM7QUFNUEM7QUFOTyxHQURJO0FBZWJDLFVBQVE7QUFDTk4sV0FBTyxRQUREO0FBRU5DLFVBQU0sUUFGQTtBQUdOTSxjQUFVLEVBSEo7QUFJTkMsZUFBVyxNQUpMO0FBS05DLGNBQVUsRUFMSjtBQU1OTixjQUFVLENBQUMsQ0FBRCxFQUFJLENBQUosQ0FOSjtBQU9OQyxVQUFNLENBQUMsQ0FBRCxFQUFJLENBQUosQ0FQQTtBQVFOQztBQVJNLEdBZks7QUEyQ2JLLFVBQVE7QUFDTlYsV0FBTyxhQUREO0FBRU5DLFVBQU0sUUFGQTtBQUdOVSxnQkFBWSxVQUhOO0FBSU5KLGNBQVUsRUFKSjtBQUtOSyxrQkFBYyxFQUxSO0FBTU5ULGNBQVUsQ0FBQyxDQUFELEVBQUksQ0FBSixDQU5KO0FBT05DLFVBQU0sQ0FBQyxHQUFELEVBQU0sR0FBTixDQVBBO0FBUU5DO0FBUk0sR0EzQ0s7QUF1RWJRLGFBQVc7QUFDVGIsV0FBTyxZQURFO0FBRVRDLFVBQU0sWUFGRztBQUdUYSxlQUFXLFNBSEY7QUFJVFAsY0FBVSxFQUpEO0FBS1RFLGNBQVUsRUFMRDtBQU1UTixjQUFVLENBQUMsQ0FBRCxFQUFJLENBQUosQ0FORDtBQU9UQyxVQUFNLENBQUMsQ0FBRCxFQUFJLEdBQUosQ0FQRztBQVFUQztBQVJTLEdBdkVFO0FBbUdiVSxRQUFNO0FBQ0pmLFdBQU8scUJBREg7QUFFSkMsVUFBTSxNQUZGO0FBR0plLGNBQVUsVUFITjtBQUlKYixjQUFVLENBQUMsQ0FBRCxFQUFJLENBQUosQ0FKTjtBQUtKQyxVQUFNLENBQUMsR0FBRCxFQUFNLENBQU4sQ0FMRjtBQU1KQztBQU5JO0FBbkdPLEMiLCJmaWxlIjoidGVtcGxhdGVzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1xuICBzdGlja2VyOiB7XG4gICAgdGl0bGU6ICdTdGlja2VyIFRpbWUnLFxuICAgIHR5cGU6ICdzdGlja2VyJyxcbiAgICB1cmw6ICdodHRwczovL2kuZ2lwaHkuY29tL2xFbkNXWlhUNGVIU2cuZ2lmJyxcbiAgICBwb3NpdGlvbjogWzAsIDBdLFxuICAgIHNpemU6IFsxLCAxXSxcbiAgICB0ZW1wbGF0ZTogYFxuICAgICAgPGRpdj5cbiAgICAgICAgPGxhYmVsPlBpY3R1cmUgVVJMXG4gICAgICAgICAgPGlucHV0IHR5cGU9XCJ0ZXh0XCIgbmFtZT1cInVybFwiIHYtYmluZDp2YWx1ZT1cInRpbGUudXJsXCIvPlxuICAgICAgICA8L2xhYmVsPlxuICAgICAgPC9kaXY+XG4gICAgYFxuICB9LFxuICBudW1iZXI6IHtcbiAgICB0aXRsZTogJ051bWJlcicsXG4gICAgdHlwZTogJ251bWJlcicsXG4gICAgZGV2aWNlSWQ6ICcnLFxuICAgIHRleHRDb2xvcjogJyMwMDAnLFxuICAgIHByb3BlcnR5OiAnJyxcbiAgICBwb3NpdGlvbjogWzAsIDBdLFxuICAgIHNpemU6IFsxLCAxXSxcbiAgICB0ZW1wbGF0ZTogYFxuICAgICAgPGRpdj5cbiAgICAgICAgPGxhYmVsPkRldmljZSBJZFxuICAgICAgICAgIDxzZWxlY3QgbmFtZT1cImRldmljZUlkXCIgaWQ9XCJkZXZpY2VTZWxlY3RcIiA+XG4gICAgICAgICAgICA8b3B0aW9uIHYtZm9yPVwiZGV2aWNlIGluIGRldmljZUxpc3RcIiB2LWJpbmQ6c2VsZWN0ZWQ9XCJkZXZpY2U9PT10aWxlLmRldmljZUlkXCI+XG4gICAgICAgICAgICAgIHt7ZGV2aWNlfX1cbiAgICAgICAgICAgIDwvb3B0aW9uPlxuICAgICAgICA8L3NlbGVjdD5cbiAgICAgICAgPC9sYWJlbD5cbiAgICAgICAgXG4gICAgICAgIDxsYWJlbD5EYXRhIFByb3BlcnR5XG4gICAgICAgICAgPGlucHV0IHR5cGU9XCJ0ZXh0XCIgbmFtZT1cInByb3BlcnR5XCIgdi1iaW5kOnZhbHVlPVwidGlsZS5wcm9wZXJ0eVwiLz5cbiAgICAgICAgPC9sYWJlbD5cblxuICAgICAgICA8bGFiZWw+VGV4dCBDb2xvclxuICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIG5hbWU9XCJ0ZXh0Q29sb3JcIiB2LWJpbmQ6dmFsdWU9XCJ0aWxlLnRleHRDb2xvclwiLz5cbiAgICAgICAgPC9sYWJlbD5cbiAgICAgIDwvZGl2PlxuICAgIGBcbiAgfSxcbiAgYnV0dG9uOiB7XG4gICAgdGl0bGU6ICdDb29sIEJ1dHRvbicsXG4gICAgdHlwZTogJ2J1dHRvbicsXG4gICAgYnV0dG9uVGV4dDogJ0NsaWNrIE1lJyxcbiAgICBkZXZpY2VJZDogJycsXG4gICAgZGV2aWNlTWV0aG9kOiAnJyxcbiAgICBwb3NpdGlvbjogWzAsIDBdLFxuICAgIHNpemU6IFswLjgsIDAuN10sXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgIDxkaXY+XG4gICAgICAgIDxsYWJlbD5EZXZpY2UgSWRcbiAgICAgICAgICA8c2VsZWN0IG5hbWU9XCJkZXZpY2VJZFwiIGlkPVwiZGV2aWNlU2VsZWN0XCIgPlxuICAgICAgICAgICAgICA8b3B0aW9uIHYtZm9yPVwiZGV2aWNlIGluIGRldmljZUxpc3RcIiB2LWJpbmQ6c2VsZWN0ZWQ9XCJkZXZpY2U9PT10aWxlLmRldmljZUlkXCI+XG4gICAgICAgICAgICAgICAge3tkZXZpY2V9fVxuICAgICAgICAgICAgICA8L29wdGlvbj5cbiAgICAgICAgICA8L3NlbGVjdD5cbiAgICAgICAgPC9sYWJlbD5cbiAgICAgICAgXG4gICAgICAgIDxsYWJlbD5NZXRob2QgTmFtZVxuICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIG5hbWU9XCJkZXZpY2VNZXRob2RcIiB2LWJpbmQ6dmFsdWU9XCJ0aWxlLmRldmljZU1ldGhvZFwiLz5cbiAgICAgICAgPC9sYWJlbD5cbiAgICAgICAgXG4gICAgICAgIDxsYWJlbD5CdXR0b24gVGV4dFxuICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIG5hbWU9XCJidXR0b25UZXh0XCIgdi1iaW5kOnZhbHVlPVwidGlsZS5idXR0b25UZXh0XCIvPlxuICAgICAgICA8L2xhYmVsPlxuICAgICAgPC9kaXY+XG4gICBgXG4gIH0sXG4gIGxpbmVDaGFydDoge1xuICAgIHRpdGxlOiAnTGluZSBDaGFydCcsXG4gICAgdHlwZTogJ2xpbmUtY2hhcnQnLFxuICAgIGxpbmVDb2xvcjogJyNGRjYzODQnLFxuICAgIGRldmljZUlkOiAnJyxcbiAgICBwcm9wZXJ0eTogJycsXG4gICAgcG9zaXRpb246IFswLCAwXSxcbiAgICBzaXplOiBbMiwgMS41XSxcbiAgICB0ZW1wbGF0ZTogYFxuICAgICAgPGRpdj5cbiAgICAgICAgPGxhYmVsPkRldmljZSBJZFxuICAgICAgICA8c2VsZWN0IG5hbWU9XCJkZXZpY2VJZFwiIGlkPVwiZGV2aWNlU2VsZWN0XCIgPlxuICAgICAgICAgICAgPG9wdGlvbiB2LWZvcj1cImRldmljZSBpbiBkZXZpY2VMaXN0XCIgOnNlbGVjdGVkPVwiZGV2aWNlPT09dGlsZS5kZXZpY2VJZFwiPlxuICAgICAgICAgICAgICB7e2RldmljZX19XG4gICAgICAgICAgICA8L29wdGlvbj5cbiAgICAgICAgPC9zZWxlY3Q+XG4gICAgICAgIDwvbGFiZWw+XG4gICAgICAgIFxuICAgICAgICA8bGFiZWw+RGF0YSBQcm9wZXJ0eVxuICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIG5hbWU9XCJwcm9wZXJ0eVwiIDp2YWx1ZT1cInRpbGUucHJvcGVydHlcIi8+XG4gICAgICAgIDwvbGFiZWw+XG4gICAgICAgIFxuICAgICAgICA8bGFiZWw+TGluZSBDb2xvclxuICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIG5hbWU9XCJsaW5lQ29sb3JcIiA6dmFsdWU9XCJ0aWxlLmxpbmVDb2xvclwiLz5cbiAgICAgICAgPC9sYWJlbD5cbiAgICAgIDwvZGl2PlxuICAgIGBcbiAgfSxcbiAgdGV4dDoge1xuICAgIHRpdGxlOiAnTW9zdCBFeGNlbGxlbnQgTm90ZScsXG4gICAgdHlwZTogJ3RleHQnLFxuICAgIHRpbGVUZXh0OiAnIyBIZWxsbyEnLFxuICAgIHBvc2l0aW9uOiBbMCwgMF0sXG4gICAgc2l6ZTogWzEuMiwgMV0sXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgIDxkaXY+XG4gICAgICAgIDxsYWJlbD5UaGlzIHN1cHBvcnRzIDxhIGhyZWY9XCJodHRwczovL2d1aWRlcy5naXRodWIuY29tL2ZlYXR1cmVzL21hc3RlcmluZy1tYXJrZG93bi9cIiB0YXJnZXQ9XCJfYmxhbmtcIj5tYXJrZG93bjwvYT4hXG4gICAgICAgICAgPHRleHRhcmVhIG5hbWU9XCJ0aWxlVGV4dFwiIDp2YWx1ZT1cInRpbGUudGlsZVRleHRcIiA+PC90ZXh0YXJlYT5cbiAgICAgICAgPC9sYWJlbD5cbiAgICAgIDwvZGl2PlxuICAgIGBcbiAgfVxufTtcbiJdfQ==
