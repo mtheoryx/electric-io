@@ -32,7 +32,7 @@ You can also list your connections strings [via the command line](https://docs.m
 
 **Now you're ready to install the app.**
 
-We have 2 different ways you can do this. You can do this via the [native installation](#native-installation) method below, or you can [use Docker, mentioned a bit lower](#docker-installation).!
+We have 2 different ways you can do this. You can do this via the [native installation](#native-installation) method below, or you can [use Docker, mentioned a bit lower](#docker-installation)!
 
 ### Native Installation
 
@@ -198,6 +198,8 @@ This mode will show your cards and your telemetry, but won't let them create, ed
 This might also be handy for when you're happy with how everything is and want the dashboard to look a little cleaner.
 
 ## Contributing
+
+**We gladly accept contributions!**
 
 If you'd like to contribute to this repo, please read the [Contributing Guide](CONTRIBUTING.md)!
 
