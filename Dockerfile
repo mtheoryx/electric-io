@@ -26,10 +26,19 @@ COPY --from=install /usr/app/. .
 COPY . .
 
 #
-# @TODO: Create the application testing layer
+# Create the application testing layer
+# If the tests fail, this container will not build
+FROM node:10.14.1-alpine as testing
+
+WORKDIR /usr/app
+
+COPY --from=develop /usr/app/. .
+
+RUN npm run test
 
 #
 # @TODO: Create the production install and build layer
+
 
 #
 # @TODO: Create the production file layer
