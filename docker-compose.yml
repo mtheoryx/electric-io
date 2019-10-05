@@ -1,8 +1,10 @@
-version: "3"
+version: '3.7'
 
 services:
   app:
-    build: .
+    build:
+      context: .
+      target: develop
     image: electic-io
     container_name: electric-io
     command: npm run start
