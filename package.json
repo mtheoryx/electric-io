@@ -11,7 +11,8 @@
     "watch:server": "nodemon server.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "build": "webpack --progress --colors"
+    "build": "webpack --progress --colors",
+    "build:production": "NODE_ENV=production webpack --progress --colors"
   },
   "dependencies": {
     "@azure/event-hubs": "^2.1.1",
