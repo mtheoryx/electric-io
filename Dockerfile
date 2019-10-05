@@ -25,5 +25,20 @@ COPY --from=install /usr/app/. .
 # App source
 COPY . .
 
-# Default Command
-CMD ["npm", "run", "start"]
+#
+# @TODO: Create the application testing layer
+
+#
+# @TODO: Create the production install and build layer
+
+#
+# @TODO: Create the production file layer
+
+#
+# @TODO: Create the production hosting layer
+
+#
+# @TODO: Create the production file layer
+
+# Default Command - This is never used
+CMD [""]
