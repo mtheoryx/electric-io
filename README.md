@@ -103,10 +103,10 @@ docker logs -f electric-io
 
 #### Build and run the project in simulating mode
 
-The docker compose file has been configured to read from the .env file, or you can pass in your own override for whether to run in simulating mode with the following:
+The docker compose file has been configured to read from the .env file, or you can pass in your own override for whether to run without simulating mode with the following:
 
 ```sh
-SIMULATING=true docker-compose up --build
+SIMULATING=false docker-compose up --build
 ```
 
 #### Shut down the Docker Compose stack
